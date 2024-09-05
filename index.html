@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BF Images Rating</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+  rel="stylesheet"/>
+</head>
+<style>
+  h1{
+    font-family:  "Sono", sans-serif;
+    text-align: center;
+    
+    
+  }
+  body{
+    font-family:  "Sono", sans-serif;
+    
+  }
+  .main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    flex-wrap: wrap;
+    
+  }
+
+  .rating-card{
+    flex:1;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .rating1{
+    background-color: #E0FBE2;
+  }
+
+  .rating2{
+    background-color:#BFF6C3;
+  }
+
+  .rating3{
+    background-color:#B0EBB4;
+  }
+
+  .card-image{
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .card-title{
+    font-size: 24px;
+    font-weight: bold;margin-bottom: 10px;
+  }
+
+  .card-comments{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media(max-width:1250px){
+    .main-container{
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+
+</style>
+<body>
+  <h1>🎀💍Madusha's Favourites🎀💍</h1>
+  <div class="main-container">
+    <div class = "rating-card rating1">
+      <div class = "card-title">Cute</div>
+      <div class ="card-image"><img src="./assets/images/cute (3).jpg" alt="Hasaranga cute photo"></div>
+      <ul class = "card-comments">
+        <li>❤️Cutest smile in the world</li>
+        <li>❤️Cuteness Overload</li>
+      </ul>
+    
+    </div>
+
+    <div class = "rating-card rating2">
+      <div class = "card-title">Favourite</div>
+      <div class ="card-image"><img src="./assets/images/favourite (2).jpg" alt="Hasaranga favourite photo"></div>
+      <ul class = "card-comments">
+        <li>❤️My favourite</li>
+        <li>❤️Prince of Charming</li>
+      </ul>
+    </div>
+
+    <div class = "rating-card rating3">
+      <div class = "card-title">Sexy</div>
+      <div class ="card-image"><img src="./assets/images/sexy (2).jpg" alt="Hasaranga sexy photo"></div>
+      <ul class = "card-comments">
+        <li>❤️ooh sexy sexyy</li>
+        <li>❤️My sex essential🤤</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
